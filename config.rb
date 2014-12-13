@@ -8,7 +8,7 @@ sass_dir = "sass"
 sass_path = sass_dir
 images_dir = "img"
 javascripts_dir = "js"
- output_style = (environment == :production) ? :compressed : :expanded
+output_style = (environment == :production) ? :compressed : :expanded
 relative_assets = true
 project_type = :stand_alone
 preferred_syntax = :scss
