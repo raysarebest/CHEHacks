@@ -1,3 +1,49 @@
+//Necessary variables
+$parallax-perspective: 1;
+$parallax-element: "body";
+$parallax-ios: true;
+//Necessary imports
+@import "includes/_parallax.scss";
+@import "includes/_animations.scss";
+@import "compass/css3/images";
+@include parallax-init;
+//A feeble attempt to fix Internet Explorer
 @-ms-viewport{
   width: device-width;
+}
+//Actual styles
+html{
+  @include background-image(linear-gradient(#ff2438, #ad1c29));
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  font-size: 5em;
+  a{
+    text-decoration: none;
+    &:visited{
+      color: white;
+    }
+  }
+}
+h1{
+  top: 20%;
+  left: 23%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  .italic{
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+  }
+}
+ul{
+  list-style: none;
+  text-decoration: none;
+}
+//Parallax stuff
+#wrapper{
+  > *{
+    position: absolute;
+  }
 }
