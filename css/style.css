@@ -4,8 +4,8 @@
     transform: translate(0, 0);
   }
   65% {
-    -moz-transform: translate(0, 15px);
-    transform: translate(0, 15px);
+    -moz-transform: translate(0, 4px);
+    transform: translate(0, 4px);
   }
   to {
     -moz-transform: translate(0, 0);
@@ -18,8 +18,8 @@
     transform: translate(0, 0);
   }
   65% {
-    -webkit-transform: translate(0, 15px);
-    transform: translate(0, 15px);
+    -webkit-transform: translate(0, 4px);
+    transform: translate(0, 4px);
   }
   to {
     -webkit-transform: translate(0, 0);
@@ -34,10 +34,10 @@
     transform: translate(0, 0);
   }
   65% {
-    -moz-transform: translate(0, 15px);
-    -ms-transform: translate(0, 15px);
-    -webkit-transform: translate(0, 15px);
-    transform: translate(0, 15px);
+    -moz-transform: translate(0, 4px);
+    -ms-transform: translate(0, 4px);
+    -webkit-transform: translate(0, 4px);
+    transform: translate(0, 4px);
   }
   to {
     -moz-transform: translate(0, 0);
@@ -100,8 +100,8 @@
     transform: translate(0, 0) scale(1);
   }
   50% {
-    -moz-transform: translate(0, 15px) scale(0.9);
-    transform: translate(0, 15px) scale(0.9);
+    -moz-transform: translate(0, 4px) scale(0.9);
+    transform: translate(0, 4px) scale(0.9);
   }
   to {
     -moz-transform: translate(0, 0) scale(1);
@@ -114,8 +114,8 @@
     transform: translate(0, 0) scale(1);
   }
   50% {
-    -webkit-transform: translate(0, 15px) scale(0.9);
-    transform: translate(0, 15px) scale(0.9);
+    -webkit-transform: translate(0, 4px) scale(0.9);
+    transform: translate(0, 4px) scale(0.9);
   }
   to {
     -webkit-transform: translate(0, 0) scale(1);
@@ -130,10 +130,10 @@
     transform: translate(0, 0) scale(1);
   }
   50% {
-    -moz-transform: translate(0, 15px) scale(0.9);
-    -ms-transform: translate(0, 15px) scale(0.9);
-    -webkit-transform: translate(0, 15px) scale(0.9);
-    transform: translate(0, 15px) scale(0.9);
+    -moz-transform: translate(0, 4px) scale(0.9);
+    -ms-transform: translate(0, 4px) scale(0.9);
+    -webkit-transform: translate(0, 4px) scale(0.9);
+    transform: translate(0, 4px) scale(0.9);
   }
   to {
     -moz-transform: translate(0, 0) scale(1);
@@ -171,7 +171,7 @@ body, body * {
 @-ms-viewport {
   width: device-width;
 }
-/* line 15, ../sass/style.scss */
+/* line 16, ../sass/style.scss */
 html {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmMjQzOCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2FkMWMyOSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -186,77 +186,58 @@ html {
   font-family: 'Dosis', sans-serif;
   font-size: 5em;
 }
-/* line 23, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 html a {
   text-decoration: none;
 }
-/* line 25, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 html a:visited {
   color: white;
 }
 
 /* line 32, ../sass/style.scss */
-#wrapper > * {
-  position: absolute;
+#wrapper {
+  padding: 10%;
+  max-width: 40em;
+  margin: auto;
 }
-/* line 35, ../sass/style.scss */
-#wrapper h1 {
-  top: 20%;
-  left: 23%;
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  color: #8a9191;
-  -moz-transform: translateZ(-0.7px) scale(1.7);
-  -ms-transform: translateZ(-0.7px) scale(1.7);
-  -webkit-transform: translateZ(-0.7px) scale(1.7);
-  transform: translateZ(-0.7px) scale(1.7);
-  z-index: -0.7;
-  -moz-animation: idling 10s 3s infinite;
-  -webkit-animation: idling 10s 3s infinite;
-  animation: idling 10s 3s infinite;
-}
-/* line 41, ../sass/style.scss */
-#wrapper h1 .italic {
-  font-family: 'Lato', sans-serif;
-  font-style: italic;
-  color: white;
-}
-/* line 49, ../sass/style.scss */
-#wrapper ul {
-  list-style: none;
-  text-decoration: none;
-}
-/* line 52, ../sass/style.scss */
-#wrapper ul li {
-  position: absolute;
-}
-/* line 55, ../sass/style.scss */
-#wrapper ul li:first-child {
+/* line 33, ../sass/style.scss */
+#wrapper :nth-child(1) {
+  -moz-transform: translateZ(-0.4px) scale(1.4);
+  -ms-transform: translateZ(-0.4px) scale(1.4);
+  -webkit-transform: translateZ(-0.4px) scale(1.4);
+  transform: translateZ(-0.4px) scale(1.4);
+  z-index: -0.4;
   top: 200px;
   left: 200px;
-  -moz-transform: translateZ(0.4px) scale(0.6);
-  -ms-transform: translateZ(0.4px) scale(0.6);
-  -webkit-transform: translateZ(0.4px) scale(0.6);
-  transform: translateZ(0.4px) scale(0.6);
-  z-index: 0.4;
-  -moz-animation: idling 10s 3s infinite;
-  -webkit-animation: idling 10s 3s infinite;
-  animation: idling 10s 3s infinite;
+  color: #8a9191;
+  font-family: 'Lato', sans-serif;
 }
-/* line 61, ../sass/style.scss */
-#wrapper ul li:last-child {
-  -moz-transform: translateZ(2px) scale(1);
-  -ms-transform: translateZ(2px) scale(1);
-  -webkit-transform: translateZ(2px) scale(1);
-  transform: translateZ(2px) scale(1);
-  z-index: 2;
+/* line 39, ../sass/style.scss */
+#wrapper :nth-child(1) .italic {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+}
+/* line 45, ../sass/style.scss */
+#wrapper :nth-child(2) {
+  -moz-transform: translateZ(0.2px) scale(0.8);
+  -ms-transform: translateZ(0.2px) scale(0.8);
+  -webkit-transform: translateZ(0.2px) scale(0.8);
+  transform: translateZ(0.2px) scale(0.8);
+  z-index: 0.2;
   top: 200px;
   left: 500px;
-  -moz-animation: idling 10s 2s infinite;
-  -webkit-animation: idling 10s 2s infinite;
-  animation: idling 10s 2s infinite;
 }
-/* line 68, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
+#wrapper :nth-child(2):hover {
+  color: #8a9191;
+}
+/* line 52, ../sass/style.scss */
+#wrapper :nth-child(2):visited {
+  color: white;
+}
+/* line 56, ../sass/style.scss */
 #wrapper :nth-child(3) {
   -moz-transform: translateZ(0.3px) scale(0.7);
   -ms-transform: translateZ(0.3px) scale(0.7);
@@ -265,11 +246,16 @@ html a:visited {
   z-index: 0.3;
   top: 400px;
   left: 600px;
-  -moz-animation: idling 6s 2s infinite;
-  -webkit-animation: idling 6s 2s infinite;
-  animation: idling 6s 2s infinite;
 }
-/* line 74, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
+#wrapper :nth-child(3):hover {
+  color: #8a9191;
+}
+/* line 63, ../sass/style.scss */
+#wrapper :nth-child(3):visited {
+  color: white;
+}
+/* line 67, ../sass/style.scss */
 #wrapper :nth-child(4) {
   -moz-transform: translateZ(0.1px) scale(0.9);
   -ms-transform: translateZ(0.1px) scale(0.9);
@@ -278,11 +264,8 @@ html a:visited {
   z-index: 0.1;
   top: 500px;
   left: 500px;
-  -moz-animation: idling 8s 3s infinite;
-  -webkit-animation: idling 8s 3s infinite;
-  animation: idling 8s 3s infinite;
 }
-/* line 80, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 #wrapper :nth-child(5) {
   -moz-transform: translateZ(-2px) scale(3);
   -ms-transform: translateZ(-2px) scale(3);
@@ -291,11 +274,8 @@ html a:visited {
   z-index: -2;
   top: 2000px;
   left: 2000px;
-  -moz-animation: idling 6s 1s infinite;
-  -webkit-animation: idling 6s 1s infinite;
-  animation: idling 6s 1s infinite;
 }
-/* line 86, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 #wrapper :nth-child(6) {
   -moz-transform: translateZ(0.4px) scale(0.6);
   -ms-transform: translateZ(0.4px) scale(0.6);
@@ -304,11 +284,8 @@ html a:visited {
   z-index: 0.4;
   top: 600px;
   left: 300px;
-  -moz-animation: idling 6s 1s infinite;
-  -webkit-animation: idling 6s 1s infinite;
-  animation: idling 6s 1s infinite;
 }
-/* line 92, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 #wrapper :nth-child(7) {
   -moz-transform: translateZ(-1px) scale(2);
   -ms-transform: translateZ(-1px) scale(2);
@@ -317,11 +294,8 @@ html a:visited {
   z-index: -1;
   top: 400px;
   left: 1000px;
-  -moz-animation: idling 8s 1s infinite;
-  -webkit-animation: idling 8s 1s infinite;
-  animation: idling 8s 1s infinite;
 }
-/* line 98, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 #wrapper :nth-child(8) {
   -moz-transform: translateZ(-0.4px) scale(1.4);
   -ms-transform: translateZ(-0.4px) scale(1.4);
@@ -330,11 +304,8 @@ html a:visited {
   z-index: -0.4;
   top: 100px;
   left: 1400px;
-  -moz-animation: idling 5s 2s infinite;
-  -webkit-animation: idling 5s 2s infinite;
-  animation: idling 5s 2s infinite;
 }
-/* line 104, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 #wrapper :nth-child(9) {
   -moz-transform: translateZ(0.4px) scale(0.6);
   -ms-transform: translateZ(0.4px) scale(0.6);
@@ -343,7 +314,31 @@ html a:visited {
   z-index: 0.4;
   top: 900px;
   left: 500px;
-  -moz-animation: idling 9s 1s infinite;
-  -webkit-animation: idling 9s 1s infinite;
-  animation: idling 9s 1s infinite;
+}
+/* line 97, ../sass/style.scss */
+#wrapper :nth-child(10) {
+  -moz-transform: translateZ(-1px) scale(2);
+  -ms-transform: translateZ(-1px) scale(2);
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  top: 1600px;
+  left: 100px;
+}
+/* line 105, ../sass/style.scss */
+#wrapper > * {
+  position: absolute;
+}
+
+/* line 109, ../sass/style.scss */
+a {
+  color: white;
+}
+/* line 111, ../sass/style.scss */
+a:hover {
+  color: #8a9191;
+}
+/* line 114, ../sass/style.scss */
+a:visited {
+  color: white;
 }

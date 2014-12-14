@@ -10,7 +10,7 @@
       overflow: hidden;
     }
   }
-  #{$element}{
+    #{$element}{
     overflow: auto;
     @include perspective($perspective * 1px);
     @include transform-style(preserve-3d);
