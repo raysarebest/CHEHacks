@@ -7,7 +7,7 @@ $gray: #8a9191;
 @import "includes/_parallax";
 @import "includes/_animations";
 @import "compass/css3/images";
-@import "compass/css3/transitions";
+@import "compass/css3/transition";
 @include parallax-init;
 //A feeble attempt to fix Internet Explorer
 @-ms-viewport{
