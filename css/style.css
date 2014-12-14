@@ -1,3 +1,147 @@
+@-moz-keyframes floating {
+  from {
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  65% {
+    -moz-transform: translate(0, 15px);
+    transform: translate(0, 15px);
+  }
+  to {
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes floating {
+  from {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  65% {
+    -webkit-transform: translate(0, 15px);
+    transform: translate(0, 15px);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes floating {
+  from {
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  65% {
+    -moz-transform: translate(0, 15px);
+    -ms-transform: translate(0, 15px);
+    -webkit-transform: translate(0, 15px);
+    transform: translate(0, 15px);
+  }
+  to {
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@-moz-keyframes scaling {
+  from {
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  50% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@-webkit-keyframes scaling {
+  from {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes scaling {
+  from {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  50% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@-moz-keyframes idling {
+  from {
+    -moz-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    -moz-transform: translate(0, 15px) scale(0.9);
+    transform: translate(0, 15px) scale(0.9);
+  }
+  to {
+    -moz-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+}
+@-webkit-keyframes idling {
+  from {
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    -webkit-transform: translate(0, 15px) scale(0.9);
+    transform: translate(0, 15px) scale(0.9);
+  }
+  to {
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+}
+@keyframes idling {
+  from {
+    -moz-transform: translate(0, 0) scale(1);
+    -ms-transform: translate(0, 0) scale(1);
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    -moz-transform: translate(0, 15px) scale(0.9);
+    -ms-transform: translate(0, 15px) scale(0.9);
+    -webkit-transform: translate(0, 15px) scale(0.9);
+    transform: translate(0, 15px) scale(0.9);
+  }
+  to {
+    -moz-transform: translate(0, 0) scale(1);
+    -ms-transform: translate(0, 0) scale(1);
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+}
 /* line 5, ../sass/includes/_parallax.scss */
 html, body {
   width: 100%;
@@ -57,20 +201,37 @@ h1 {
   left: 23%;
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
+  color: #8a9191;
+  -moz-animation: idling 7s 2s infinite;
+  -webkit-animation: idling 7s 2s infinite;
+  animation: idling 7s 2s infinite;
 }
-/* line 35, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 h1 .italic {
   font-family: 'Lato', sans-serif;
   font-style: italic;
+  color: white;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 ul {
   list-style: none;
   text-decoration: none;
 }
-
 /* line 46, ../sass/style.scss */
+ul li:first-child {
+  -moz-animation: idling 7s 1s infinite;
+  -webkit-animation: idling 7s 1s infinite;
+  animation: idling 7s 1s infinite;
+}
+/* line 49, ../sass/style.scss */
+ul li:last-child {
+  -moz-animation: idling 5s 2s infinite;
+  -webkit-animation: idling 5s 2s infinite;
+  animation: idling 5s 2s infinite;
+}
+
+/* line 55, ../sass/style.scss */
 #wrapper > * {
   position: absolute;
 }

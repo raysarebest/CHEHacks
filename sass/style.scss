@@ -3,8 +3,8 @@ $parallax-perspective: 1;
 $parallax-element: "body";
 $parallax-ios: true;
 //Necessary imports
-@import "includes/_parallax.scss";
-@import "includes/_animations.scss";
+@import "includes/_parallax";
+@import "includes/_animations";
 @import "compass/css3/images";
 @include parallax-init;
 //A feeble attempt to fix Internet Explorer
@@ -32,14 +32,23 @@ h1{
   left: 23%;
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
+  color: #8a9191;
   .italic{
     font-family: 'Lato', sans-serif;
     font-style: italic;
+    color: white;
   }
+  @include idle;
 }
 ul{
   list-style: none;
   text-decoration: none;
+  li:first-child{
+    @include idle;
+  }
+  li:last-child{
+    @include idle;
+  }
 }
 //Parallax stuff
 #wrapper{
