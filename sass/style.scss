@@ -7,6 +7,7 @@ $gray: #8a9191;
 @import "includes/_parallax";
 @import "includes/_animations";
 @import "compass/css3/images";
+@import "compass/css3/transitions";
 @include parallax-init;
 //A feeble attempt to fix Internet Explorer
 @-ms-viewport{
@@ -108,6 +109,7 @@ html{
 }
 a{
   color: white;
+  @include transition(color 1s);
   &:hover{
     color: $gray;
   }
@@ -115,26 +117,3 @@ a{
     color: white;
   }
 }
-// body {
-//   font-family: Roboto, sans-serif;
-//   font-weight: 100;
-//   @include background-image(linear-gradient(#ff2438, #ad1c29));
-//   background-size: cover;
-//   background-attachment: fixed;
-//   background-repeat: no-repeat;
-//   line-height: 1;
-// }
-//
-// h1, h2 {
-//   font-weight: 100;
-//   margin: 0;
-// }
-//
-// h1 {
-//   font-size: 5em;
-//   color: $primary;
-// }
-// h2 {
-//   font-size: 3em;
-//   @include parallax(.2);
-// }
