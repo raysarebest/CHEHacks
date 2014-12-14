@@ -195,43 +195,155 @@ html a:visited {
   color: white;
 }
 
-/* line 30, ../sass/style.scss */
-h1 {
+/* line 32, ../sass/style.scss */
+#wrapper > * {
+  position: absolute;
+}
+/* line 35, ../sass/style.scss */
+#wrapper h1 {
   top: 20%;
   left: 23%;
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
   color: #8a9191;
-  -moz-animation: idling 7s 2s infinite;
-  -webkit-animation: idling 7s 2s infinite;
-  animation: idling 7s 2s infinite;
+  -moz-transform: translateZ(-0.7px) scale(1.7);
+  -ms-transform: translateZ(-0.7px) scale(1.7);
+  -webkit-transform: translateZ(-0.7px) scale(1.7);
+  transform: translateZ(-0.7px) scale(1.7);
+  z-index: -0.7;
+  -moz-animation: idling 10s 3s infinite;
+  -webkit-animation: idling 10s 3s infinite;
+  animation: idling 10s 3s infinite;
 }
-/* line 36, ../sass/style.scss */
-h1 .italic {
+/* line 41, ../sass/style.scss */
+#wrapper h1 .italic {
   font-family: 'Lato', sans-serif;
   font-style: italic;
   color: white;
 }
-
-/* line 43, ../sass/style.scss */
-ul {
+/* line 49, ../sass/style.scss */
+#wrapper ul {
   list-style: none;
   text-decoration: none;
 }
-/* line 46, ../sass/style.scss */
-ul li:first-child {
-  -moz-animation: idling 7s 1s infinite;
-  -webkit-animation: idling 7s 1s infinite;
-  animation: idling 7s 1s infinite;
+/* line 52, ../sass/style.scss */
+#wrapper ul li {
+  position: absolute;
 }
-/* line 49, ../sass/style.scss */
-ul li:last-child {
+/* line 55, ../sass/style.scss */
+#wrapper ul li:first-child {
+  top: 200px;
+  left: 200px;
+  -moz-transform: translateZ(0.4px) scale(0.6);
+  -ms-transform: translateZ(0.4px) scale(0.6);
+  -webkit-transform: translateZ(0.4px) scale(0.6);
+  transform: translateZ(0.4px) scale(0.6);
+  z-index: 0.4;
+  -moz-animation: idling 10s 3s infinite;
+  -webkit-animation: idling 10s 3s infinite;
+  animation: idling 10s 3s infinite;
+}
+/* line 61, ../sass/style.scss */
+#wrapper ul li:last-child {
+  -moz-transform: translateZ(2px) scale(1);
+  -ms-transform: translateZ(2px) scale(1);
+  -webkit-transform: translateZ(2px) scale(1);
+  transform: translateZ(2px) scale(1);
+  z-index: 2;
+  top: 200px;
+  left: 500px;
+  -moz-animation: idling 10s 2s infinite;
+  -webkit-animation: idling 10s 2s infinite;
+  animation: idling 10s 2s infinite;
+}
+/* line 68, ../sass/style.scss */
+#wrapper :nth-child(3) {
+  -moz-transform: translateZ(0.3px) scale(0.7);
+  -ms-transform: translateZ(0.3px) scale(0.7);
+  -webkit-transform: translateZ(0.3px) scale(0.7);
+  transform: translateZ(0.3px) scale(0.7);
+  z-index: 0.3;
+  top: 400px;
+  left: 600px;
+  -moz-animation: idling 6s 2s infinite;
+  -webkit-animation: idling 6s 2s infinite;
+  animation: idling 6s 2s infinite;
+}
+/* line 74, ../sass/style.scss */
+#wrapper :nth-child(4) {
+  -moz-transform: translateZ(0.1px) scale(0.9);
+  -ms-transform: translateZ(0.1px) scale(0.9);
+  -webkit-transform: translateZ(0.1px) scale(0.9);
+  transform: translateZ(0.1px) scale(0.9);
+  z-index: 0.1;
+  top: 500px;
+  left: 500px;
+  -moz-animation: idling 8s 3s infinite;
+  -webkit-animation: idling 8s 3s infinite;
+  animation: idling 8s 3s infinite;
+}
+/* line 80, ../sass/style.scss */
+#wrapper :nth-child(5) {
+  -moz-transform: translateZ(-2px) scale(3);
+  -ms-transform: translateZ(-2px) scale(3);
+  -webkit-transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2px) scale(3);
+  z-index: -2;
+  top: 2000px;
+  left: 2000px;
+  -moz-animation: idling 6s 1s infinite;
+  -webkit-animation: idling 6s 1s infinite;
+  animation: idling 6s 1s infinite;
+}
+/* line 86, ../sass/style.scss */
+#wrapper :nth-child(6) {
+  -moz-transform: translateZ(0.4px) scale(0.6);
+  -ms-transform: translateZ(0.4px) scale(0.6);
+  -webkit-transform: translateZ(0.4px) scale(0.6);
+  transform: translateZ(0.4px) scale(0.6);
+  z-index: 0.4;
+  top: 600px;
+  left: 300px;
+  -moz-animation: idling 6s 1s infinite;
+  -webkit-animation: idling 6s 1s infinite;
+  animation: idling 6s 1s infinite;
+}
+/* line 92, ../sass/style.scss */
+#wrapper :nth-child(7) {
+  -moz-transform: translateZ(-1px) scale(2);
+  -ms-transform: translateZ(-1px) scale(2);
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  top: 400px;
+  left: 1000px;
+  -moz-animation: idling 8s 1s infinite;
+  -webkit-animation: idling 8s 1s infinite;
+  animation: idling 8s 1s infinite;
+}
+/* line 98, ../sass/style.scss */
+#wrapper :nth-child(8) {
+  -moz-transform: translateZ(-0.4px) scale(1.4);
+  -ms-transform: translateZ(-0.4px) scale(1.4);
+  -webkit-transform: translateZ(-0.4px) scale(1.4);
+  transform: translateZ(-0.4px) scale(1.4);
+  z-index: -0.4;
+  top: 100px;
+  left: 1400px;
   -moz-animation: idling 5s 2s infinite;
   -webkit-animation: idling 5s 2s infinite;
   animation: idling 5s 2s infinite;
 }
-
-/* line 55, ../sass/style.scss */
-#wrapper > * {
-  position: absolute;
+/* line 104, ../sass/style.scss */
+#wrapper :nth-child(9) {
+  -moz-transform: translateZ(0.4px) scale(0.6);
+  -ms-transform: translateZ(0.4px) scale(0.6);
+  -webkit-transform: translateZ(0.4px) scale(0.6);
+  transform: translateZ(0.4px) scale(0.6);
+  z-index: 0.4;
+  top: 900px;
+  left: 500px;
+  -moz-animation: idling 9s 1s infinite;
+  -webkit-animation: idling 9s 1s infinite;
+  animation: idling 9s 1s infinite;
 }

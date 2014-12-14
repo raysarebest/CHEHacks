@@ -27,32 +27,84 @@ html{
     }
   }
 }
-h1{
-  top: 20%;
-  left: 23%;
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  color: #8a9191;
-  .italic{
-    font-family: 'Lato', sans-serif;
-    font-style: italic;
-    color: white;
-  }
-  @include idle;
-}
-ul{
-  list-style: none;
-  text-decoration: none;
-  li:first-child{
-    @include idle;
-  }
-  li:last-child{
-    @include idle;
-  }
-}
 //Parallax stuff
 #wrapper{
   > *{
     position: absolute;
+  }
+  h1{
+    top: 20%;
+    left: 23%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: #8a9191;
+    .italic{
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      color: white;
+    }
+    @include parallax(-.7);
+    @include idle;
+  }
+  ul{
+    list-style: none;
+    text-decoration: none;
+    li{
+      position: absolute;
+    }
+    li:first-child{
+      top: 200px;
+      left: 200px;
+      @include parallax(.4);
+      @include idle;
+    }
+    li:last-child{
+      @include parallax(2);
+      top: 200px;
+      left: 500px;
+      @include idle;
+    }
+  }
+  :nth-child(3) {
+    @include parallax(.3);
+    top: 400px;
+    left: 600px;
+    @include idle;
+  }
+  :nth-child(4) {
+    @include parallax(.1);
+    top: 500px;
+    left: 500px;
+    @include idle;
+  }
+  :nth-child(5) {
+    @include parallax(-2);
+    top: 2000px;
+    left: 2000px;
+    @include idle;
+  }
+  :nth-child(6) {
+    @include parallax(.4);
+    top: 600px;
+    left: 300px;
+    @include idle;
+  }
+  :nth-child(7) {
+    @include parallax(-1);
+    top: 400px;
+    left: 1000px;
+    @include idle;
+  }
+  :nth-child(8) {
+    @include parallax(-.4);
+    top: 100px;
+    left: 1400px;
+    @include idle;
+  }
+  :nth-child(9) {
+    @include parallax(.4);
+    top: 900px;
+    left: 500px;
+    @include idle;
   }
 }

@@ -40,6 +40,9 @@
   }
   @return $number;
 }
+@function randPercent($minimum, $maximum){
+  @return minRandom($minimum, $maximum) + "%";
+}
 @mixin float(){
   @include animation(floating #{minRandom(3, 10)}s #{random(3)}s infinite ease-in-out);
 }
